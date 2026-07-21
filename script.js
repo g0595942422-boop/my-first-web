@@ -7,7 +7,9 @@ const skillTip = document.querySelector("#skillTip");
 currentYear.textContent = new Date().getFullYear();
 
 messageButton.addEventListener("click", function () {
-  messageText.textContent = "谢谢你的关注！你可以把邮箱和 GitHub 换成自己的真实信息。";
+messageButton.addEventListener("click", function () {
+  messageText.textContent = "谢谢你的关注！欢迎通过页面中的联系方式联系我。";
+});
 });
 
 skillCards.forEach(function (card) {
