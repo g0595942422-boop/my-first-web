@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#top">个人主页</a>
+      <div class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="top">
+      <div class="hero-text">
+        <p class="tag">Front-end Beginner</p>
+        <h1>你好，我是前端学习者</h1>
+        <p>
+          这是一个使用 HTML、CSS 和 JavaScript 制作的简单个人主页模板。
+          页面风格统一、结构清晰，适合初学者阅读和修改。
+        </p>
+        <a class="button" href="#contact">联系我</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-title">
+        <p class="tag">About</p>
+        <h2>我的介绍</h2>
+      </div>
+      <div class="card">
+        <p>
+          我喜欢学习新技术，也喜欢用简单清晰的方式记录自己的成长。
+          目前我正在练习网页结构、页面样式和基础交互，希望以后能做出更完整的网站。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-title">
+        <p class="tag">Skills</p>
+        <h2>技能展示</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card skill-card">
+          <h3>HTML</h3>
+          <p>用标签组织网页内容，创建清晰的页面结构。</p>
+        </article>
+        <article class="card skill-card">
+          <h3>CSS</h3>
+          <p>设置颜色、布局、间距和响应式效果。</p>
+        </article>
+        <article class="card skill-card">
+          <h3>JavaScript</h3>
+          <p>给网页添加简单交互，让页面更有趣。</p>
+        </article>
+      </div>
+      <p class="tip" id="skillTip">提示：点击一个技能卡片试试看。</p>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-title">
+        <p class="tag">Projects</p>
+        <h2>项目列表</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>个人主页</h3>
+          <p>展示个人介绍、技能、项目和联系方式的静态网页。</p>
+        </article>
+        <article class="card">
+          <h3>学习笔记</h3>
+          <p>整理 HTML、CSS、JavaScript 的基础知识点。</p>
+        </article>
+        <article class="card">
+          <h3>待办清单</h3>
+          <p>未来可以练习制作添加、完成和删除任务的小工具。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-title">
+        <p class="tag">Contact</p>
+        <h2>联系方式</h2>
+      </div>
+      <div class="card contact-card">
+        <p>如果你想和我交流学习经验，可以通过下面的方式联系我。</p>
+        <ul class="contact-list">
+          <li>邮箱：2945037395@qq.com</li>
+          <li>GitHub：github.com/your-name</li>
+          <li>城市：浙江</li>
+        </ul>
+        <button class="button" id="messageButton" type="button">给我留言</button>
+        <p class="message" id="messageText"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> 我的个人主页。继续学习，持续进步。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
