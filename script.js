@@ -7,7 +7,9 @@ const skillTip = document.querySelector("#skillTip");
 currentYear.textContent = new Date().getFullYear();
 
 messageButton.addEventListener("click", function () {
+messageButton.addEventListener("click", function () {
   messageText.textContent = "谢谢你的关注！欢迎通过页面中的联系方式联系我。";
+});
 });
 
 skillCards.forEach(function (card) {
